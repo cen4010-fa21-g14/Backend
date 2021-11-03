@@ -23,16 +23,13 @@ dotenv.config();
 
 mongoose.connect(process.env.MONGO_URL, {
         useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useCreateIndex: true,
-        useFindandModify: true
+        useUnifiedTopology: true
      })   
  .then(() => console.log("Connected to MongoDB!"))
  .catch(err => console.log(err));
 
-console.log("Mongo_URL", process.env.MONGO_URL);
 //Middleware
-app.use(timeout('5s'));
+app.use(timeout('10s'));
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
