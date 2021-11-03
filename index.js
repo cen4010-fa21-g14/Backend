@@ -41,9 +41,9 @@ app.use("/api/posts", postRoute);
 
 // app.use(express.static(path.join(__dirname, '/distantly-near/build')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/distantly-near/build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '/distantly-near/build', 'index.html'));
+// });
 
 
 const port = process.env.PORT || 8080;
