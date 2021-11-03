@@ -46,10 +46,10 @@ app.get('*', (req, res) => {
 });
 
 
-// const PORT = process.env.PORT || 8800;
+const port = process.env.PORT || 8080;
 
-app.listen(process.env.PORT || 8800,()=>{
-    console.log("Backend server is running");
+app.listen(port,()=>{
+    console.log("Backend server is running on port", port);
 })
 
 
