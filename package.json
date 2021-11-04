@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cd distantly-near && npm run build",
-    "install": "cd distantly-near && npm install",
     "start": "nodemon index.js",
-    "dev": "concurrently \"npm run Backend\" \"npm run distantly-near\""
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
