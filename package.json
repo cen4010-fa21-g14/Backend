@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "heroku-postbuild": "cd distantly-near && npm install && npm run build"
+    "start": "node index.js",
+    "heroku-postbuild": "cd distantly-near && npm install && npm run build",
+    "build": "node ./buildScript"
   },
   "author": "",
   "license": "ISC",
