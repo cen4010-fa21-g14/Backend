@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client-install": "npm install --prefix distantly-near",
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm start --prefix distantly-near",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "cd distantly-near && npm install && npm run build"
   },
   "author": "",
