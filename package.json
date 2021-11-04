@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "ng build",
-    "heroku-postbuild": "cd distantly-near && npm install && npm run build",
-    "postinstall": "ng build --aot --prod"
+    "heroku-postbuild": "cd distantly-near && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
