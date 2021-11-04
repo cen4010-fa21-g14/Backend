@@ -41,10 +41,10 @@ app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
 
 
-app.use(express.static(path.join(__dirname, '/distantly-near/backend/build')));
+app.use(express.static(path.join(__dirname, '/my-app/build')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/distantly-near/backend/build', 'index.html'));
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/my-app/build', 'index.html'));
 });
 
 
