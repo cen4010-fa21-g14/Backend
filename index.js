@@ -8,7 +8,7 @@ const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
 const timeout = require("connect-timeout");
-const path = require("path");
+// const path = require("path");
 
 
 
@@ -41,17 +41,21 @@ app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
 
 
-app.use(express.static('distantly-near/build'));
+// app.use(express.static('distantly-near/build'));
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'distantly-near/build', 'index.html'));
-});
+// app.get('/*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'distantly-near/build', 'index.html'));
+// });
 
 
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 8080;
 
-app.listen(port,()=>{
-    console.log("Backend server is running on port", port);
+// app.listen(port,()=>{
+//     console.log("Backend server is running on port", port);
+// })
+
+app.listen(8800,()=>{
+  console.log("Backend server is running")
 })
 
 
